@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Makarand Vaydande</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/userAsset/NavLogo.jpeg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Navbar -->
+      <div class="container">
+        <div class="navbar">
+          <div class="logo-container">
+            <img
+              src="./images/userAsset/NavLogo.jpeg"
+              alt="user_logo"
+              class="logo"
+            />
+            <div class="logo-text">akarand</div>
+          </div>
+
+          <div class="nav-items">
+            <div><a href="#projects">Projects</a></div>
+            <div><a href="#skills">Skills</a></div>
+            <div><a href="#contactme">Contact Me</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="hero-section container">
+        <div class="faded-text">Makarand Vaydande</div>
+        <div class="hero-section-left">
+          <div class="hero-section-heading">
+            <p style="font-size: x-large">Hi There! I am,</p>
+            <p style="font-weight: 900">Makarand Vaydande</p>
+          </div>
+          <div class="hero-section-heading hero-section-sub-heading">
+            I am into <span class="role"></span>
+          </div>
+          <div class="hero-section-description">
+            Passionate AI and Data Science student with a strong foundation in
+            machine learning algorithms, data analysis, and statistical
+            modeling. Eager to apply theoretical knowledge gained through
+            coursework to real-world challenges.
+          </div>
+          <div class="hero-section-button btn-pink">Hire Me</div>
+        </div>
+
+        <div class="hero-section-right">
+          <div class="absolute icons icon-dots">
+            <img src="./images/userAsset/dots.png" alt="dots_png" />
+          </div>
+          <div class="absolute icons icon-cube">
+            <img src="./images/userAsset/cube.png" alt="cube_png" />
+          </div>
+          <div class="absolute icons icon-circle">
+            <img src="./images/userAsset/circle.png" alt="circle_png" />
+          </div>
+          <div class="absolute icons icon-zigzags">
+            <img src="./images/userAsset/zigzags.png" alt="zigzags_png" />
+          </div>
+          <div class="absolute icons icon-plus">
+            <img src="./images/userAsset/plus.png" alt="plus_png" />
+          </div>
+          <div class="user-image">
+            <img src="./images/userAsset/makarand.png" alt="My-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var typeData = new Typed(".role", {
+        strings: [
+          "Data Science",
+          "Machine Learning",
+          "Data Analysis",
+          "Web Development",
+          "Backend Development",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+      });
+    </script>
+  </body>
+</html>
