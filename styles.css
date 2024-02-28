@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   scroll-behavior: smooth;
 }
 
@@ -10,7 +10,7 @@
   src: url(./fonts/BeVietnamPro-Light.ttf);
 }
 
-body {
+.background-color {
   background-color: rgb(245, 245, 245);
 }
 
@@ -78,6 +78,10 @@ body {
 
 a {
   text-decoration: None;
+}
+
+.space {
+  height: 6rem;
 }
 
 /* Hero Section */
@@ -300,4 +304,286 @@ a {
     top: 3%;
     left: 38%;
   }
+}
+
+.project-section {
+  background-color: rgb(200, 200, 200);
+  margin-top: 4.5rem;
+}
+
+.project-header {
+  color: orangered;
+  font-size: 90px;
+  padding: 30px;
+  text-align: center;
+  font-family: Be-Vietnam-Pro;
+}
+
+.project-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.project-card {
+  width: 90%;
+  height: 550px;
+  position: relative;
+  box-shadow: 0px 0px 40px #1f1f1f;
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1f1f1f9a;
+  /* transform: scaleX(1); */
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+  transform: scalex(0);
+  transform-origin: left;
+  transition: all 0.4s;
+}
+
+.project-card:hover::before {
+  transform: scaleX(1);
+}
+
+.project-number {
+  position: absolute;
+  font-size: 200px;
+  font-weight: 600;
+  color: white;
+  font-family: Be-Vietnam-Pro;
+  z-index: 10;
+  opacity: 0;
+}
+
+.project-card:hover .project-number {
+  opacity: 1;
+}
+
+.project-number-right {
+  right: -40px;
+  top: -45px;
+}
+
+.project-number-left {
+  left: -40px;
+  top: -45px;
+}
+
+.project-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 2em;
+  bottom: 20%;
+  z-index: 5;
+  gap: 1em;
+  transition: all 0.4s;
+}
+
+.project-content-left {
+  left: 10%;
+}
+
+.project-content-right {
+  right: 10%;
+}
+
+.project-card:hover .project-content {
+  transform: scale(1.1);
+}
+
+.project-skill-container {
+  width: 60%;
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.project-skill {
+  width: 40px;
+}
+
+.project-heading {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 3rem;
+  font-family: Be-Vietnam-Pro;
+}
+
+.project-sub-heading {
+  font-size: 16px;
+  width: 70%;
+  font-style: italic;
+  font-family: Be-Vietnam-Pro;
+}
+
+.btn-group {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.btn-project:hover {
+  border: none;
+}
+
+.icon {
+  cursor: pointer;
+  color: white;
+  font-size: 35px;
+  transition: all 0.4s;
+}
+
+.icon:hover {
+  color: orangered;
+}
+
+#project1 {
+  background-image: url(./images/projects/Project1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#project2 {
+  margin-left: 120px;
+  background-image: url(./images/projects/Project2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#project3 {
+  background-image: url(./images/projects/Project3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#project4 {
+  margin-left: 120px;
+  background-image: url(./images/projects/Project4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Skills Section */
+.bg-white {
+  background-color: white;
+  z-index: -10;
+}
+.skills-section {
+  position: relative;
+  display: flex;
+  padding: 5rem;
+  margin: 10rem;
+  gap: 30px;
+}
+
+.skill-container-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-container-right {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-faded-text {
+  position: absolute;
+  font-size: 15em;
+  font-style: bold;
+  color: rgb(200, 200, 200);
+  user-select: none;
+  bottom: -34.5%;
+  right: -25%;
+  font-family: Be-Vietnam-Pro;
+}
+
+.blob-style {
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  right: 25%;
+  bottom: 25%;
+  animation: blobAnimation 4s linear infinite;
+  z-index: 1;
+}
+
+@keyframes blobAnimation {
+  0% {
+    right: 25%;
+    bottom: 25%;
+  }
+  25% {
+    right: 28%;
+    bottom: 27%;
+  }
+  50% {
+    right: 31%;
+    bottom: 29%;
+  }
+  75% {
+    right: 28%;
+    bottom: 27%;
+  }
+  100% {
+    right: 25%;
+    bottom: 25%;
+  }
+}
+
+.skills-logo {
+  width: 90px;
+  z-index: 10;
+  height: 90px;
+}
+
+.skills-logo:hover {
+  transform: scale(1.2);
+}
+
+.skill-heading {
+  font-size: 50px;
+  font-style: bold;
+  color: orangered;
+  font-family: Be-Vietnam-Pro;
+}
+
+.caps {
+  font-size: 90px;
+}
+
+.skills-subheading {
+  margin-top: 1rem;
+  width: 85%;
+  text-align: justify;
+  font-family: Be-Vietnam-Pro;
+}
+
+.skills-subheading p {
+  margin: 15px 0;
 }
