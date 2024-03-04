@@ -801,6 +801,9 @@ footer {
     background-position: center;
   }
   .project-content {
+    width: 120%;
+    margin-left: -20%;
+    justify-content: center;
     scale: 0.5;
     bottom: 0;
     left: 0;
@@ -834,6 +837,10 @@ footer {
   }
   .project-card:hover .project-content {
     scale: 0.55;
+  }
+  .skills-logo {
+    width: 40px;
+    height: 40px;
   }
 
   .skills-section {
