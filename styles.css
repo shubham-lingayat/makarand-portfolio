@@ -49,7 +49,7 @@
 
 .logo-text {
   margin-left: -1.2rem;
-  font-size: 28px;
+  font-size: 30px;
   margin-top: 0.7rem;
   font-family: Be-Vietnam-Pro;
 }
@@ -61,7 +61,7 @@
 }
 
 .nav-items div {
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 500;
   cursor: pointer;
   font-family: Be-Vietnam-Pro;
@@ -748,13 +748,7 @@ footer {
 }
 */
 
-@media (max-width: 1300px) {
-  .space {
-    height: 0;
-  }
-  .navbar {
-    padding-top: 0;
-  }
+@media (max-width: 800px) {
   .hero-section {
     flex-wrap: wrap-reverse;
     width: 100%;
@@ -767,6 +761,44 @@ footer {
   .hero-section-right {
     width: 70%;
   }
+}
+
+@media (max-width: 1300px) and (min-width: 800px) {
+  .hero-section {
+    width: 100vw;
+  }
+  .hero-section-left {
+    width: 50%;
+  }
+  .hero-section-right {
+    max-width: 331.72px;
+    min-height: 442.439px;
+    margin-right: 10%;
+  }
+  .user-image > img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .space {
+    height: 0;
+  }
+  .navbar {
+    padding-top: 0;
+  }
+  /* .hero-section {
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-section-left {
+    width: 100%;
+  }
+  .hero-section-right {
+    width: 70%;
+  } */
   .hero-section-heading p {
     font-size: 30px;
   }
@@ -801,9 +833,6 @@ footer {
     background-position: center;
   }
   .project-content {
-    width: 120%;
-    margin-left: -20%;
-    justify-content: center;
     scale: 0.5;
     bottom: 0;
     left: 0;
@@ -837,10 +866,6 @@ footer {
   }
   .project-card:hover .project-content {
     scale: 0.55;
-  }
-  .skills-logo {
-    width: 40px;
-    height: 40px;
   }
 
   .skills-section {
